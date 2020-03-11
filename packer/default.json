@@ -1,0 +1,28 @@
+{
+  "variables": {
+    "aws_ami_name": "Opsflex-base-ami",
+    "aws_access_key": "{{env `AWS_ACCESS_KEY`}}",
+    "aws_secret_key": "{{env `AWS_SECRET_KEY`}}",
+    "aws_region": "ap-northeast-2",
+    "aws_source_ami": "ami-0a93a08544874b3b7",
+    "aws_instance_type": "t2.micro",
+    "aws_ssh_username": "ec2-user"
+  },
+  "builders": [{
+    "type": "amazon-ebs",
+    "access_key": "{{user `aws_access_key`}}",
+    "secret_key": "{{user `aws_secret_key`}}",
+    "region": "{{user `aws_region`}}",
+    "source_ami": "{{user `aws_source_ami`}}",
+    "instance_type": "{{user `aws_instance_type`}}",
+    "ssh_username": "{{user `aws_ssh_username`}}",
+    "ami_name": "{{user `aws_ami_name`}}",
+    "tags": {
+      "Name": "{{user `aws_ami_name`}}"
+    }
+  }],
+  "provisioners": [{
+    "type": "ansible",
+    "playbook_file": "ansible/default.yml"
+  }]
+}
