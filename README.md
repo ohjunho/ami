@@ -1,3 +1,8 @@
+# OpsFlex Toolchain IaC Project
+
+This is the IaC project for OpsFlex Toolchain.
+
+
 # Packer
 Packer is a free and open source tool for creating golden images for multiple platforms from a single source configuration.
 ## Builder
@@ -18,3 +23,15 @@ Target server list
 What to do
 ## Task
 How to do 
+
+## Build infrastructure for OpsFlex
+cmd $ cd ~
+cmd $ mkdir workspace
+cmd $ cd workspace
+
+/* git clone */
+cmd $ git clone https://github.com/opsflex/ami.git
+cmd $ cd ~/workspace/iac/packer
+
+/* perform packer command */
+cmd $ packer build default.json

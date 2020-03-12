@@ -1,0 +1,6 @@
+---
+- name: update yum packages
+  become: yes
+  yum:
+    list: updates
+    update_cache: true

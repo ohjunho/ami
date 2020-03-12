@@ -1,0 +1,5 @@
+---
+java:
+  distribution: corretto
+  version: 11
+

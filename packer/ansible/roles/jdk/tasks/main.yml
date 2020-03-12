@@ -1,6 +1,0 @@
----
-- name: install JDK 8
-  become: yes
-  yum:
-    pkg: java-1.8.0-openjdk-devel
-    state: latest

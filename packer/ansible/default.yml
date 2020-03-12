@@ -1,5 +1,0 @@
-- name: Opsflex default image
-  hosts: all
-  roles:
-    - common
-    - jdk
