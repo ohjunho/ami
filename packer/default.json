@@ -24,7 +24,13 @@
     }
   }],
   "provisioners": [
-
+    {
+      "type": "ansible",
+      "playbook_file": "{{user `ansible_playbook_path`}}/sample/web_base.yml",
+      "extra_arguments": [
+        "--extra-vars", "env=dev"
+      ]
+    },
     {
       "type": "ansible",
       "playbook_file": "{{user `galaxy_ansible_playbook_path`}}/java/main.yml",
