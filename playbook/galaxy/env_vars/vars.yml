@@ -1,10 +1,17 @@
 ---
 # Java
 java:
-  distribution: corretto
-  version: 11
+  distribution: adoptopenjdk
+  version: 8
 
 # Maven
 # available version (3.6.3, 3.6.2, 3.6.1, 3.6.0, 3.5.4, 3.5.3, 3.5.2, 3.5.0, 3.3.9, 3.2.5, 3.1.1)
 maven:
   version: '3.6.3'
+
+# Nexus
+nexus:
+  nexus_admin_password: changeme
+  nexus_min_heap_size: 800M
+  nexus_max_heap_size: 1000M
+  nexus_max_direct_memory: 1000M
