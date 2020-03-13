@@ -1,4 +1,4 @@
-# Packer + Ansible Toolchain
+# Packer + Ansible Toolchain (304 test)
 
 ## * git checkout + Role 선택 + 빌드
 ### 1. git checkout
