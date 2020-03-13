@@ -1,4 +1,4 @@
-# Packer + Ansible Toolchain
+# Packer + Ansible Toolchain (TEST)
 
 ## * git checkout + Role 선택 + 빌드
 ### 1. git checkout
@@ -40,5 +40,3 @@
 
 #### 4. EC2 인스턴스에서 설치된 항목 확인
 ##### 생성된 EC2에 접속하여 설치 리스트 확인   
-
-/* dd */
