@@ -6,9 +6,7 @@
     "aws_region": "ap-northeast-2",
     "aws_source_ami": "ami-0a93a08544874b3b7",
     "aws_instance_type": "t2.micro",
-    "aws_ssh_username": "ec2-user",
-    "ansible_playbook_path": "../playbook",
-    "galaxy_ansible_playbook_path": "../playbook/galaxy"
+    "aws_ssh_username": "ec2-user"
   },
   "builders": [{
     "type": "amazon-ebs",
@@ -25,18 +23,8 @@
   }],
   "provisioners": [
     {
-      "type": "ansible",
-      "playbook_file": "{{user `ansible_playbook_path`}}/sample/web_base.yml",
-      "extra_arguments": [
-        "--extra-vars", "env=dev"
-      ]
-    },
-    {
-      "type": "ansible",
-      "playbook_file": "{{user `galaxy_ansible_playbook_path`}}/java/main.yml",
-      "extra_arguments": [
-        "--extra-vars", "env=dev"
-      ]
+      "playbook_file": "playbook.yml",
+      "type": "ansible"
     }
   ]
 }
