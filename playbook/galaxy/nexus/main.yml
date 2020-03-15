@@ -7,6 +7,7 @@
   vars:
     nexus_timezone: 'UTC'
     nexus_admin_password: "{{ nexus.nexus_admin_password }}"
+    nexus_default_port: "{{ nexus.nexus_default_port }}"
     nexus_public_hostname: 'nexus.vm'
     httpd_setup_enable: false
     nexus_min_heap_size: "{{ nexus.nexus_min_heap_size }}"

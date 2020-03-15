@@ -12,6 +12,7 @@ maven:
 # Nexus
 nexus:
   nexus_admin_password: changeme
+  nexus_default_port: 8081
   nexus_min_heap_size: 800M
   nexus_max_heap_size: 1000M
   nexus_max_direct_memory: 1000M
