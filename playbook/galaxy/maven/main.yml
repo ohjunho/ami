@@ -1,4 +1,4 @@
-# Installation > $ ansible-galaxy install gantsign.maven
+---
 - name: Install maven
   hosts: all
   pre_tasks:
