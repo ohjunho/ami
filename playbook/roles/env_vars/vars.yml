@@ -1,0 +1,6 @@
+---
+# Gradle
+# available version (6.2.2, 4.8.1)
+gradle:
+  version: '6.2.2'
+  dir: "/opt"

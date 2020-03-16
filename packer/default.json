@@ -1,6 +1,6 @@
 {
   "variables": {
-    "aws_ami_name": "Opsflex-base-ami-galaxy",
+    "aws_ami_name": "Opsflex-base-ami-ming1",
     "aws_access_key": "{{env `AWS_ACCESS_KEY`}}",
     "aws_secret_key": "{{env `AWS_SECRET_KEY`}}",
     "aws_region": "ap-northeast-2",
