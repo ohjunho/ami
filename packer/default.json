@@ -1,11 +1,11 @@
 {
   "variables": {
-    "aws_ami_name": "Opsflex-base-ami-ming1",
+    "aws_ami_name": "Opsflex-base-ami-galaxy-nexus",
     "aws_access_key": "{{env `AWS_ACCESS_KEY`}}",
     "aws_secret_key": "{{env `AWS_SECRET_KEY`}}",
     "aws_region": "ap-northeast-2",
     "aws_source_ami": "ami-0a93a08544874b3b7",
-    "aws_instance_type": "t2.micro",
+    "aws_instance_type": "t3.medium",
     "aws_ssh_username": "ec2-user"
   },
   "builders": [{
