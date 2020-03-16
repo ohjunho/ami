@@ -1,7 +1,8 @@
-# Packer + Ansible Toolchain (TEST)
+# Packer + Ansible Toolchain
 
 ## * git checkout + Role 선택 + 빌드
 ### 1. git checkout
+    /* make directory */
     cmd $ cd ~
     cmd $ mkdir workspace
     cmd $ cd workspace
