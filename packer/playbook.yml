@@ -3,3 +3,4 @@
 - import_playbook: "../playbook/galaxy/nexus/main.yml"
 - import_playbook: "../playbook/galaxy/maven/main.yml"
 - import_playbook: "../playbook/roles/gradle/tasks/main.yml"
+- import_playbook: "../playbook/galaxy/jenkins/main.yml"

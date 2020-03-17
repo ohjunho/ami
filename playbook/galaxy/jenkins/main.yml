@@ -1,0 +1,11 @@
+- name: Install jenkins
+  hosts: all
+  become: true
+
+  pre_tasks:
+    - include_vars: "../env_vars/vars.yml"
+
+  vars:
+
+  roles:
+    - role: geerlingguy.jenkins
