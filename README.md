@@ -10,7 +10,8 @@
     /* git clone */
     cmd $ git clone https://github.com/opsflex/ami.git
     cmd $ cd ~/workspace/ami
-    cmd $ init_ansible_galaxy.sh
+    cmd $ chmod +x ./init_ansible_galaxy.sh
+    cmd $ ./init_ansible_galaxy.sh
     
 
 ### 2. Role 선택
