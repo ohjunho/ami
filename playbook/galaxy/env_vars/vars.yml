@@ -20,12 +20,15 @@ nexus:
   nexus_max_heap_size: 1000M
   nexus_max_direct_memory: 1000M
 
+# jenkins
+jenkins:
+  jenkins_http_port: 8088
+
 # Gitlab-ce
 gitlab_edition: "gitlab-ce"
 gitlab_package_version_separator: '-'
 gitlab_repository_installation_script_url: "https://packages.gitlab.com/install/repositories/gitlab/{{ gitlab_edition }}/script.rpm.sh"
 gitlab_redirect_http_to_https: "false"
-gitlab_create_self_signed_cert: "false"
 
 # Gitlab External Domain URL Input
 #gitlab_external_url: "https://gitlab.example.com/"
