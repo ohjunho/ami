@@ -1,4 +1,5 @@
 ---
+- import_playbook: "../playbook/galaxy/gitlab-ce/main.yml"
 - import_playbook: "../playbook/galaxy/java/main.yml"
 - import_playbook: "../playbook/galaxy/nexus/main.yml"
 - import_playbook: "../playbook/galaxy/maven/main.yml"
