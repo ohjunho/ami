@@ -6,6 +6,6 @@
     - include_vars: "../env_vars/vars.yml"
 
   vars:
-
+    jenkins_http_port: {{ jenkins.jenkins_http_port }}
   roles:
     - role: geerlingguy.jenkins
