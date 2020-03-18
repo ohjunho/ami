@@ -9,7 +9,9 @@
     
     /* git clone */
     cmd $ git clone https://github.com/opsflex/ami.git
-    cmd $ cd ~/workspace/ami/packer
+    cmd $ cd ~/workspace/ami
+    cmd $ init_ansible_galaxy.sh
+    
 
 ### 2. Role 선택
     cmd $ cd ~/workspace/ami/playbook
@@ -19,7 +21,8 @@
     > 사용할 role 추가 및 편집
     > 사용하지 않는 role은 #을 통해 주석 처리
 ![screen](manual/images/aws_ami_3.png)
-    
+
+
 ### 3. Packer bild
     cmd $ cd ~/workspace/ami/packer
     
