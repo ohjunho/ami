@@ -1,8 +1,6 @@
----
 - name: Install Gitlab-ce
   hosts: all
   become: true
-  # validate_certs: no
 
   pre_tasks:
     - include_vars: "../env_vars/vars.yml"
