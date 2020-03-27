@@ -18,14 +18,6 @@
       stat: path=/usr/bin/gitlab-ctl
       register: gitlab_file
 
-    - name: Install GitLab dependencies update (Debian).
-      shell: apt update
-      when: ansible_os_family == 'Debian'
-
-    - name: Install GitLab dependencies update (Redhat).
-      shell: yum update
-      when: ansible_os_family == 'Redhat'
-
     # Install GitLab and its dependencies.
     - name: Install GitLab dependencies.
       package:
@@ -36,6 +28,10 @@
           - openssl
           - tzdata
         state: present
+
+    - name: Install GitLab dependencies update (Debian).
+      shell: apt update
+      when: ansible_os_family == 'Debian'
 
     - name: Install GitLab dependencies (Debian).
       apt:
