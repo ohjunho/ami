@@ -1,7 +1,7 @@
 ---
-- import_playbook: "../playbook/galaxy/gitlab-ce/main.yml"
-- import_playbook: "../playbook/galaxy/java/main.yml"
-- import_playbook: "../playbook/galaxy/nexus/main.yml"
-- import_playbook: "../playbook/galaxy/maven/main.yml"
-- import_playbook: "../playbook/roles/gradle/tasks/main.yml"
-- import_playbook: "../playbook/galaxy/jenkins/main.yml"
+- import_playbook: "../playbook/roles/gitlab/tasks/main.yml"
+#- import_playbook: "../playbook/roles/java/tasks/main.yml"
+#- import_playbook: "../playbook/galaxy/nexus/main.yml"
+#- import_playbook: "../playbook/galaxy/maven/main.yml"
+#- import_playbook: "../playbook/roles/gradle/tasks/main.yml"
+#- import_playbook: "../playbook/galaxy/jenkins/main.yml"

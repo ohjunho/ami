@@ -1,4 +1,15 @@
 ---
+
+# Gitlab-ce
+gitlab_edition: "gitlab-ce"
+
+# java
+# amazon/fedora/redhat : 1.8.0, 11, 13
+# debian/ubuntu : 8, 11, 13
+# freebsd : 6, 8, 11, 13
+java:
+  version: 1.8.0
+
 # Gradle
 # available version (6.2.2, 4.8.1)
 gradle:
