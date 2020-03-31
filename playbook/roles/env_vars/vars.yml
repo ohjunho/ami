@@ -15,3 +15,6 @@ java:
 gradle:
   version: '4.8.1'
   dir: "/opt"
+
+#jenkins
+jenkins_http_port: 8088
