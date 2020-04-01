@@ -6,9 +6,6 @@
     - include_vars: "../../env_vars/vars.yml"
   tasks:
 
-    - name: Include RHEL or Debian variable values
-      include_vars: "../vars/{{ ansible_os_family }}.yml"
-
     - include: "{{ ansible_os_family }}.yml"
 
     - name: "Get CodeDeploy | s3"
