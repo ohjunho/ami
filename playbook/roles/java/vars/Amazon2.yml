@@ -2,4 +2,4 @@
 # JDK version options include:
 #   - java-1.8.0-amazon-corretto
 #   - java-11-amazon-corretto
-__java_packages: "java-{{ java.version }}-amazon-corretto"
+__java_packages: "java-{{ java.redhat_version }}-amazon-corretto"

@@ -1,8 +1,0 @@
----
-- name: Install maven
-  hosts: all
-  pre_tasks:
-      - include_vars: "../env_vars/vars.yml"
-  roles:
-    - role: gantsign.maven
-      maven_version: "{{ maven.version }}"
