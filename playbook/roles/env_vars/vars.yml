@@ -8,10 +8,13 @@ gitlab_edition: "gitlab-ce"
 # debian/ubuntu : 8, 11, 13
 # freebsd : 6, 8, 11, 13
 java:
-  version: 1.8.0
+  version: 8
 
 # Gradle
 # available version (6.2.2, 4.8.1)
 gradle:
   version: '4.8.1'
   dir: "/opt"
+
+#jenkins
+jenkins_http_port: 8088
