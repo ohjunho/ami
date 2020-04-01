@@ -1,0 +1,15 @@
+---
+- name: apt update
+  shell: apt update
+
+- name: Update all Ubuntu packages
+  apt:
+    update_cache: yes
+
+
+- name: "Install Packages | package manager"
+  package:
+    state: latest
+    name: "{{ item }}"
+    update_cache: yes
+  with_items: "{{ packages }}"

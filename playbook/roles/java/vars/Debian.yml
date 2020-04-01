@@ -4,4 +4,4 @@
 #   - openjdk-6-jdk
 #   - openjdk-7-jdk
 __java_packages:
-  - "openjdk-{{ java.version }}-jdk"
+  - "openjdk-{{ java.debian_version }}-jdk"

@@ -24,6 +24,7 @@
     - name: Set gradle environment variable
       blockinfile:
         path: /etc/profile
+        marker: "# {mark} gradle "
         block: |
           export GRADLE_HOME=/opt/gradle-{{ gradle.version }}
           export PATH=$PATH:$GRADLE_HOME/bin

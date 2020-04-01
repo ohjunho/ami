@@ -1,6 +1,6 @@
 {
   "variables": {
-    "aws_ami_name": "opsflex-linux-ami",
+    "aws_ami_name": "opsflex-awslinux2-ansible-ami",
     "aws_access_key": "{{env `AWS_ACCESS_KEY`}}",
     "aws_secret_key": "{{env `AWS_SECRET_KEY`}}",
     "aws_region": "ap-northeast-2",
