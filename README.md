@@ -48,10 +48,13 @@ AWS Auto Scaling Group: 인스턴스 조정 및 관리 목적으로 구성된 Am
 
 
 ### 3.4. Packer bild
-    $ cd ~/workspace/ami/packer
-    
-    /* packer build */
-    packer build default.json
+#### 생성할 OS 환경에 따라 build 폴더로 이동하여 build 실행
+##### 3.4.1 aws linux2 build (packer build json파일)
+    $ cd ~/workspace/ami/packer/build_awslinux2
+    $ packer build jenkins-ami.json
+##### 3.4.2 ubuntu build (packer build json파일)
+    $ cd ~/workspace/ami/packer/build_ubuntu
+    $ $ packer build jenkins-ami.json
     
 
 ## 4. Packer + Ansible Toolchain 이미지 확인
