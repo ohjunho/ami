@@ -9,7 +9,10 @@ pipeline {
 
     stage('Image Build') {
       steps {
-        sh '''/opt/packer/packer build /var/lib/jenkins/workspace/ami_master/packer/build_ubuntu/gitlab-ami.json'''
+        sh '''
+cd /var/lib/jenkins/workspace/ami_master
+/opt/packer/packer build packer/build_ubuntu/gitlab-ami.json
+        '''
       }
     }
 
