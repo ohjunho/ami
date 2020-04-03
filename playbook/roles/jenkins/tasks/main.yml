@@ -5,6 +5,7 @@
   become: yes
   pre_tasks:
     - include_vars: "../../env_vars/vars.yml"
+    - include_vars: "../../env_vars/jenkins_plugins.yml"
     - include_vars: "../vars/main.yml"
   tasks:
     # Variable setup.
