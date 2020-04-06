@@ -17,9 +17,4 @@ cd /var/lib/jenkins/workspace/ami_master/packer/build_${OS_Type}
     }
 
   }
-  environment {
-    GIT_BRANCH = 'master'
-    OS_Type = 'ubuntu'
-    Target_Image = 'jenkins'
-  }
 }
