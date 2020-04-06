@@ -2,6 +2,7 @@
 
 # Gitlab-ce
 gitlab_edition: "gitlab-ce"
+gitlab_version: '12.4.1'
 
 # java
 # amazon/fedora/redhat : 1.8.0, 11, 13
