@@ -1,5 +1,10 @@
 pipeline {
   agent any
+  environment {
+    GIT_BRANCH = 'master'
+    OS_Type = 'awslinux2'
+    Target_Image = 'gitlab'
+  }
   stages {
     stage('Git clone') {
       steps {
@@ -10,21 +15,11 @@ pipeline {
     stage('Image Build') {
       steps {
         sh '''
-cd /var/lib/jenkins/workspace/ami_master/packer/build_awslinux2
-/opt/packer/packer build gitlab-ami.json
+cd /var/lib/jenkins/workspace/ami_master/packer/build_${OS_Type}
+/opt/packer/packer build ${Target_Image}-ami.json
         '''
       }
     }
 
-  }
-  environment {
-    GIT_BRANCH = 'master'
-    OS_Type = 'awslinux2'
-    Target_Image = 'gitlab'
-  }
-  parameters {
-    string(name: 'OS_Type', defaultValue: 'awslinux2', description: 'awslinux2 | ubuntu')
-    string(name: 'Target_Image', defaultValue: 'gitlab', description: 'gitlab | jenkins | sonarqube')
-    string(name: 'branch', defaultValue: 'master', description: 'branch name')
   }
 }
