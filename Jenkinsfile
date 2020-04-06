@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Git clone') {
       steps {
-        git(url: 'https://github.com/opsflex/ami.git', branch: "${GIT_BRANCH}")
+        git(url: 'https://github.com/opsflex/ami.git', branch: "${GIT_BRANCH}", changelog: true)
       }
     }
 
