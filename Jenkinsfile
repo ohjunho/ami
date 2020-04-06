@@ -1,10 +1,5 @@
 pipeline {
   agent any
-  environment {
-    GIT_BRANCH = 'master'
-    OS_Type = 'awslinux2'
-    Target_Image = 'gitlab'
-  }
   stages {
     stage('Git clone') {
       steps {
@@ -21,5 +16,10 @@ cd /var/lib/jenkins/workspace/ami_master/packer/build_${OS_Type}
       }
     }
 
+  }
+  environment {
+    GIT_BRANCH = 'master'
+    OS_Type = 'ubuntu'
+    Target_Image = 'jenkins'
   }
 }
