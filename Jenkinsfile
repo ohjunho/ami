@@ -8,15 +8,15 @@ pipeline {
   stages {
     stage('Git clone') {
       steps {
-        git(url: 'https://github.com/opsflex/ami.git', branch: "${branch}")
+        git(url: 'https://github.com/opsflex/ami.git', branch: "${GIT_BRANCH}")
       }
     }
 
     stage('Image Build') {
       steps {
         sh '''
-cd /var/lib/jenkins/workspace/ami_master/packer/build_${OS_Type}
-/opt/packer/packer build ${Target_Image}-ami.json
+cd /var/lib/jenkins/workspace/ami_master/packer/build_awslinux2
+/opt/packer/packer build gitlab-ami.json
         '''
       }
     }
